@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="portfolio_351456.png">
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            height: 200vh;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        h1,h2,h3{
+            color: rgb(26, 60, 96);
+            font-family: 'Ubuntu',   sans-serif;
+        }
+        .name{
+            margin-left: 40px;
+        }
+        .nav{
+            height: 40px;
+            background-image: linear-gradient(to right,rgba(56,105,138,255),rgba(155,190,215,255));
+            display: flex;
+            font-size: xx-large;
+            font-family: Arial;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1000;
+            animation-name: nav;
+            animation-duration: 1s;
+        }
+        @keyframes nav {
+            from{
+                transform: translateX(-1000px);
+            }
+        }
+        a{
+            text-decoration: none;
+            font-family: 'Ubuntu', sans-serif;
+            color: white;
+            padding-top: 7px;
+            font-size: 25px;
+            transition: transform 0.3 ease;
+        }
+        a:hover{
+            color: rgb(26, 60, 96);
+        }
+        .one{
+            width: 80%;
+            display: flex;
+            justify-content: end;
+            gap: 50px;
+        }
+        #two{
+            width: 1000px;
+            height: 500px;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: medium;
+            gap: 45px;
+            margin-left: 280px;
+            margin-top: 40px;
+        }
+        .h{
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+        .k{
+            height: 300px;
+            border-radius: 50%;
+            animation-name: ko;
+            animation-duration: 1s;
+        }
+        @keyframes ko {
+            from{
+                transform: translateY(500px);
+            }
+        }
+        li+li{
+            margin-top: 10px;
+        }
+        #about{
+            margin-top: 140px;
+            margin-left: 150px;
+            height: 500px;
+            padding-left: 100px;
+            font-size: small;
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: transform 2s ease, opacity 2s ease;
+        }
+        #about.show,#contact.show,#Obj.show{
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .intro{
+            width: 1000px;
+            height: 500px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation-name: do;
+            animation-duration: 1s;
+        }
+        @keyframes do {
+            from{
+                transform: translateX(500px);
+            }
+        }
+        .lucky{
+            background-image: url('image.jpg');
+            background-size: cover;
+            
+        }
+        #contact{
+            padding: 50px;
+            margin-top: 200px;
+            height: 500px;
+            padding-left: 100px;
+            background-color: rgb(234,247,255);
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: transform 2s ease, opacity 2s ease;
+        }
+        #m{
+            height: 400px;
+            margin-left: 100px;
+            border: 2px solid rgb(26, 60, 96);
+            border-radius: 100px;
+        }
+        .image{
+            animation-name: im;
+            animation-duration: 1s;
+        }
+        @keyframes im {
+            from{
+                transform: translateY(-600px);
+            }
+        }
+        #Obj{
+            margin-top: 200px;
+            margin-left: 300px;
+            width: 900px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            margin-left: 300px;   
+            align-items: center;
+            gap: 40px;
+            background-size: cover;
+            background-position: 50%;
+            opacity: 0;
+            transform: translateX(50px);
+            transition: transform 2s ease, opacity 2s ease;
+        }
+        .icons{
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            gap: 50px;
+        }
+        a:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div style="color: white;font-family: 'Ubuntu', sans-serif;">UBENDRAN
+        </div>      
+        <div class="one">
+          <a href="#two">Home</a>
+          <a href="#about">Skills</a>
+          <a href="#Obj">Objectives</a>
+          <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div class="lucky">
+        <div id="two">
+            <div>
+                <img src="dp.jpg" alt="" class="k">
+                <div class="image"><h2> UBENDRAN SAKTHIVEL</h2></div>
+            </div>
+            <div class="intro">
+                <h3>&emsp; &emsp;Hi, I’m Ubendran, a 2nd-year Electronics Engineering student at Sri Krishna College of Engineering and Technology. I’m passionate about Embedded system, software development, graphic design and am actively building my skills through coursework, projects, and extracurricular activities. I’m eager to contribute to impactful projects and continue growing as a Electronics Engineer.</h3>
+                <img src="electrician_9760052.png" style="height: 200px; width: 200px;">
+            </div>
+        </div>
+        <div id="about" class="about">
+            <div style="display: flex;flex-direction: row; gap: 50px ;">
+                <h2>
+                    <b style="font-size: 30px;">A Brief Summary About my skills</b><br>
+                            Skills in which I can give my best
+                        <ul>
+                            <li>C++</li>
+                            <li>Basics of Data Structures and Algorithm</li>
+                            <li>Embedded Systems</li>
+                            <li>Advanced Java Programmung</li>
+                            <li>Python Programming</li>
+                            <li>Aptitude</li>
+                            <li>Problem Solving</li>
+                        </ul>
+                        Skill I am currently Working on
+                        <ul>
+                            <li>Mern Stack</li>
+                        </ul>
+                </h2>
+                <h2 style="border-left: 2px dotted; padding-left: 30px ;">
+                    <b style="font-size: 30px;">Some projects in which I have taken part</b><br>
+                    <ul>
+                            <li>Real time Soil Moisturing</li>
+                            <li>RF-Id based attendance system</li>                                    <li>Rock Paper Scissor Game</li>
+                    </ul>
+                    <a href="https://github.com/Ubendran-S/Micro-Projects" target="_blank" style="display: flex; justify-content: center;"><img src="rock-paper-scissors.png" alt="" style="height: 200px; width: 200px;"></a>
+                </h2>
+            </div>
+        </div>
+        <div id="Obj">
+            <h1>&emsp; Career Objectives</h1>
+            <h3>
+                <ul>
+                    <li>To secure an entry-level position in electronics engineering where I can apply my knowledge of circuit design and embedded systems to contribute to innovative projects.</li>
+                    <li>To begin my career as an electronics engineer by utilizing my skills in PCB design, microcontrollers, and signal processing while continuously learning and growing with the organization.</li>
+                    <li>Seeking a role in electronics engineering to contribute to cutting-edge technology development and enhance my technical expertise in areas like IoT and VLSI design.</li>
+                </ul>
+            </h3>
+            <img src="goal.png" alt="" style="height: 100px; width: 100px;">
+            <img src="image4.jpg" style="height: 200px; width: 200px; border-radius: 40px;">
+        </div>
+        <div id="contact">
+            <h1 style="display: flex; justify-content: center;"> Get in Touch</h1>
+            <h3 style="display: flex; justify-content: center;">Feel free to reach out to me for collaborations, opportunities, or just to say Hi!</h3>
+            <div style="margin-left: 200px;">
+                <h2><img src="email_552486.png" style="height: 50px; width: 50px;">&emsp;Email:</h2>
+                <h3>&emsp;ubendran1611@gmail.com</h3>
+                <h2><img src="telephone_724664.png" style="height: 50px; width: 50px;">&emsp;Phone:</h2>
+                <h3>&emsp;+91 8778627784</h3>
+                <h3>You can also contact me through the social media links below, and I will respond at my earliest convenience.</h3>
+            </div>
+            <div class="icons">
+                <a class="ic" href="https://www.linkedin.com/in/ubendran-s-312449290/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="linkedin_2504923.png" style="height: 100px; width: 100px;"></a>
+                <a class="ic" href="https://github.com/Ubendran-S" target="_blank"><img src="github_2504911.png" style="height: 100px; width: 100px;"></a>
+                <a class="ic" href="https://www.instagram.com/_ubendran_/" target="_blank"><img src="instagram_2111463.png" style="height: 100px; width: 100px;"></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('scroll', function () {
+        const sections = document.querySelectorAll('#about, #contact, #Obj');
+        sections.forEach(function(section) {
+        const boxPosition = section.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (boxPosition < windowHeight - 150) {
+            section.classList.add('show');
+        } else {
+            section.classList.remove('show');
+        }
+        });
+        });
+    </script>
+</body>
+</html>
